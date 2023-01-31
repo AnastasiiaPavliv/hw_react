@@ -9,8 +9,14 @@ const Comments = () => {
         commentsService.getAll().then(({data})=> setComments([...data]))
     },[])
     return (
-        <div>
-            {comments.map(comment => <Comment key={comment.id} comment={comment}/>)}
+        <div style={{
+            display:'flex',
+            flexDirection:'column',
+            gap:10,
+            height:450,
+            overflowY:'scroll'
+        }}>
+            {comments.map(comment => <Comment key={comments.id} comment={comment}/>)}
         </div>
     );
 };

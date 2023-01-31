@@ -1,10 +1,14 @@
 import React from 'react';
 import {Comments} from "../../Components";
+import {Outlet} from "react-router-dom";
+
 
 const CommentsPage = () => {
     return (
-        <div>
-            <Comments/>
+        <div >
+            <Comments />
+            <hr/>
+            <Outlet/>
         </div>
     );
 };

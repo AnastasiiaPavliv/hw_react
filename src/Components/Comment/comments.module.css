@@ -1,0 +1,10 @@
+.Comments{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.a{
+    width:10%;
+    background: mediumpurple;
+margin: 10px;
+}
